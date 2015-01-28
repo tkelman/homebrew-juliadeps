@@ -4,5 +4,5 @@ notifications:
 script:
   - brew tap tkelman/juliadeps
   - brew update
-  - cd $(dirname $(dirname $(which brew)))/Library/Taps/tkelman/juliadeps && git fetch && git checkout tk/test
-  - brew install -v --build-bottle cbc
+  - cd $(dirname $(dirname $(which brew)))/Library/Taps/tkelman/homebrew-juliadeps && git fetch && git checkout tk/test
+  - brew install -v --build-bottle bonmin
