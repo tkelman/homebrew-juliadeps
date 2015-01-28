@@ -1,0 +1,8 @@
+language: objective-c # osx worker
+notifications:
+  email: false
+build:
+  - brew tap tkelman/juliadeps
+  - brew update
+  - cd $(dirname $(dirname $(which brew)))/Library/Taps/tkelman/juliadeps && git fetch && git checkout tk/test
+  - brew install -v --build-bottle cbc
