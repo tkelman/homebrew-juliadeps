@@ -7,7 +7,7 @@ class Bonmin < Formula
 
   depends_on 'staticfloat/juliadeps/pkg-config' => :build
   depends_on 'staticfloat/juliadeps/cbc'
-  depends_on 'staticfloat/juliadeps/ipopt'
+  depends_on 'tkelman/juliadeps/ipopt'
 
   def install
     system "./configure", "--prefix=#{prefix}"

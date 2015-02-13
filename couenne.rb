@@ -6,7 +6,7 @@ class Couenne < Formula
   sha1 '1efd0e75d93c0efccd80e444b50d41bde16536fc'
 
   depends_on 'staticfloat/juliadeps/pkg-config' => :build
-  depends_on 'staticfloat/juliadeps/bonmin'
+  depends_on 'tkelman/juliadeps/bonmin'
 
   def install
     system "./configure", "--prefix=#{prefix}",
