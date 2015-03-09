@@ -6,8 +6,8 @@ class Optimizationservices < Formula
   sha1 'fd7bd169fb3925436f7a7ebdbf676a20b79140f0'
 
   depends_on 'staticfloat/juliadeps/pkg-config' => :build
-  depends_on 'staticfloat/juliadeps/couenne'
-  depends_on 'staticfloat/juliadeps/cppad'
+  depends_on 'tkelman/juliadeps/couenne'
+  depends_on 'homebrew/science/cppad'
 
   def install
     system "./configure", "--prefix=#{prefix}"
