@@ -1,0 +1,11 @@
+language: objective-c # osx worker
+notifications:
+  email: false
+script:
+  - brew tap tkelman/juliadeps
+  - brew update
+  - cd $(dirname $(dirname $(which brew)))/Library/Taps/tkelman/homebrew-juliadeps && git fetch && git checkout travis
+  - brew tap --repair
+  - brew install -v --build-bottle couenne
+  - brew install -v --build-bottle optimizationservices
+  - brew install -v --build-bottle cppad
