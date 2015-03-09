@@ -12,6 +12,7 @@ class Optimizationservices < Formula
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make"
+    system "make -C test alltests"
     ENV.deparallelize  # make install fails in parallel.
     system "make install"
   end

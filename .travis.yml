@@ -8,4 +8,4 @@ script:
   - brew tap --repair
   - brew install -v --build-bottle couenne
   - brew install -v --build-bottle optimizationservices
-  - brew install -v --build-bottle cppad
+#  - brew install -v --build-bottle cppad
